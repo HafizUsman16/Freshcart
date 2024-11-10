@@ -1,0 +1,91 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:"popping", sans-serif;
+}
+.couponparent{
+    width:100%;
+    height: 5vh;
+    background-color: rgb(240,243,242);
+    padding:0 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}.coupontext{
+    font-size:14px;
+    font-weight:500;
+    font-family:"inter", sans-serif;
+    color: rgb(92, 108, 117);
+}
+.languageparent{
+    width:9%;
+    height:5vh;
+    /* background-color: red; */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+    
+}
+.lanflag{
+    width:20%;
+    height:2.5vh;
+}
+.lanflag img{
+    width:100%;
+    height:100%;
+}
+.languageselection{
+    width:45%;
+    height:2.5vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.languageselection p{
+    font-size:14px;
+    font-weight:600;
+    color: rgb(92, 108, 117);
+    
+}
+.languageselection i{
+    font-size:10px;
+    color: rgb(92, 108, 117);
+    
+}
+.languageselection:hover p,
+.languageselection:hover i{
+    color:rgb(32,176,17);
+} 
+.languageparent:hover .languagehover{
+    visibility: unset;
+}
+.languagehover{
+    position: absolute;
+    /* z-index: 2; */
+    top:20px;
+    left:20px;
+
+    
+}
+.language1{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.language2{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+
+
+
+
+
+.languagehover,
+.hambergers{
+    visibility:hidden;
+} 
