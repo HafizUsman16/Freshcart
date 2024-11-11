@@ -136,6 +136,9 @@
     .languageparent {
         display: none;
     }
+    .coupontext{
+        text-align: center;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -160,6 +163,7 @@
     width: 15%;
     height: 7vh;
     background-color: black;
+    
 
 }
 
@@ -209,12 +213,46 @@
     font-weight: 700;
 }
 .carticons{
-    width:15%;
+    width:12%;
     height:7vh;
     /* background-color: red; */
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:0 2%;
+    color:rgb(0, 0, 0, 0.7);
 
+}
+.hambergers{
+    display:none; 
+}
+@media screen and (min-width:320px) {
+    .hambergers{
+        display:block;
+    }
+    .searchdetail{
+        display:none;
+    }
+    .carticons1{
+        display:none;
+    }
+    .freshcartpoto{
+        width:40%;
+        height: 7vh;
+    }
+}
+@media screen and (min-width:1024px) {
+    .hambergers{
+        display:none;
+    }
+    .searchdetail{
+        display:flex;
+    }
+    .carticons1{
+        display:flex;
+    }
+    .freshcartpoto{
+        width:15%;
+        height: 7vh;
+    }
 }
