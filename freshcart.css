@@ -139,6 +139,9 @@
     .coupontext{
         text-align: center;
     }
+    .couponparent{
+        height:6vh;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -225,6 +228,157 @@
 }
 .hambergers{
     display:none; 
+    position:relative;
+}
+.hamgershover{
+    position:absolute;
+    z-index: 3;
+    top:-53px;
+    left:-262px;
+    width:320px;
+    height:110vh;
+    background-color:red;
+    border:1px solid red;
+    
+}
+.rfreshcart{
+    width:100%;
+    height:10vh;
+    background-color:balck;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:5% 7%;
+}
+.rfreshcartpoto{
+    width:40%;
+    height:7vh;
+
+}
+.rfreshcartpoto img{
+    width:100%;
+    height:100%;
+}
+.windowscloseicon{
+    width:5%;
+    height:7vh;
+    font-size:25px;
+    margin-top:10px;    
+    /* background-color: black; */
+}
+.rsearchdetail {
+    width: 100%;
+    height: 20vh;
+    /* background-color: blue; */
+    /* display: flex;
+    justify-content: space-between;
+    align-content: center; */
+    padding:0% 5%;
+
+}
+
+.rsearchbar {
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+
+}
+
+.rlocation {
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+    padding: 0 25%;
+    margin-top:2vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+
+}
+.rsearchbar p,
+.rlocation p{
+    color:rgb(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-size:12px;
+}
+.rsearchbar i,
+.rlocation i{
+    color:rgb(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-size:14px;
+}
+.ralldepartmentsparent1{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.ralldepartmentsparent{
+    width:90%;
+    margin:0 auto;
+    margin-top:3vh;
+    height:8vh;
+    background-color:rgb(10,173,10);
+    border-radius:10px;
+    padding:2vh 25%;
+}
+.rallgridicons{
+    font-size:14px;
+    color: white;
+}
+.ralldepartmentdetails{
+    font-size:14px;
+    color:white;
+}
+
+.ralldepartmentshover{
+    width:320px;
+    height:37.5vh;
+    list-style-type:none;
+    background-color:white;
+    vertical-align: middle;
+    /* position:block;
+    top:400px;
+    left:134px; */
+    border-radius:10px;
+    padding:10px 5px;
+    /* display:none; */
+    /* box-shadow: -0px -0px 30px -15px rgba(0,0,0,0.75); */
+    border:1px solid rgb(247,248,249);
+    cursor: pointer;
+}
+.ralldepartmentshover1{
+    list-style-type: none;
+}
+.rlist1{
+    padding:6px 8px;
+    width: 98%;
+    height:5vh;
+    background-color:white;
+    border-radius:10px;
+    padding-top:7px;
+    color:rgb(0, 0, 0, 0.4);
+}
+/* .ralldepartmentsparent:hover .ralldepartmentshover{
+    display:inline;
+    top:163px;
+    
+} */
+.rlist1:hover{
+    background-color:rgb(240,243,242);
+}
+
+
+.windowscloseicon{
+    display:none;
 }
 @media screen and (min-width:320px) {
     .hambergers{
@@ -243,7 +397,7 @@
 }
 @media screen and (min-width:1024px) {
     .hambergers{
-        display:none;
+        /* display:none; */
     }
     .searchdetail{
         display:flex;
@@ -256,6 +410,7 @@
         height: 7vh;
     }
 }
+
     /* --------------------------End of navbar1 ---------------------------- */
 
 .navbar2 {
@@ -292,15 +447,15 @@
     height:37.5vh;
     list-style-type:none;
     background-color:white;
-    z-index: 5;
     vertical-align: middle;
     position:absolute;
-    top:163px;
+    top:263px;
     left:134px;
     border-radius:10px;
     padding:10px 5px;
     display:none;
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,1);
+    box-shadow: -0px -0px 30px -15px rgba(0,0,0,0.75);
+    border:1 px solid rgb(247,248,249);
     cursor: pointer;
 }
 .alldepartmentshover1{
@@ -313,10 +468,12 @@
     background-color:white;
     border-radius:10px;
     padding-top:7px;
+    color:rgb(0, 0, 0, 0.4);
 }
 .alldepartmentsparent:hover .alldepartmentshover{
     display:inline;
-
+    top:163px;
+    
 }
 .list1:hover{
     background-color:rgb(240,243,242);
@@ -359,10 +516,10 @@
     height:160px;
     position:absolute;
     left:368px;
-    top:150px;
+    top:250px;
     list-style-type:none;
     cursor: pointer;
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
     padding:5px 10px;
     border-radius:10px;
     visibility: hidden;
@@ -370,7 +527,7 @@
 
 }
 .list2{
-    padding:6px 4px;
+    padding:6px 10px;
     width: 98%;
     height:5vh;
     background-color:white;
@@ -386,6 +543,7 @@
 }
 .listhomeparent:hover .listhomeparenthover {
     visibility: visible;
+    top:160px;
 }
 .list2:hover{
     background-color:rgb(240,243,242);
@@ -411,10 +569,11 @@
     height:290px;
     position:absolute;
     left:435px;
-    top:150px;
+    top:250px;
     list-style-type:none;
     cursor: pointer;
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,1);
+    box-shadow: -0px -0px 30px -15px rgba(0,0,0,0.75);
+    border:1px solid rgb(247,248,249);
     padding:5px 10px;
     border-radius:10px;
     visibility: hidden;
@@ -422,7 +581,7 @@
 
 }
 .list3{
-    padding:6px 4px;
+    padding:6px 10px;
     width: 98%;
     height:5vh;
     background-color:white;
@@ -438,6 +597,7 @@
 }
 .listshopparent:hover .listshopparenthover {
     visibility: visible;
+    top:160px;
 }
 .list3:hover{
     background-color:rgb(240,243,242);
@@ -464,10 +624,11 @@
     height:100px;
     position:absolute;
     left:500px;
-    top:150px;
+    top:250px;
     list-style-type:none;
     cursor: pointer;
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,1);
+    box-shadow: -0px -0px 30px -15px rgba(0,0,0,0.75);
+    border:1px solid rgb(247,248,249);
     padding:5px 10px;
     border-radius:10px;
     visibility: hidden;
@@ -475,7 +636,7 @@
 
 }
 .list4{
-    padding:6px 4px;
+    padding:6px 10px;
     width: 98%;
     height:5vh;
     background-color:white;
@@ -491,6 +652,7 @@
 }
 .liststoresparent:hover .liststoresparenthover {
     visibility: visible;
+    top:160px;
 }
 .list4:hover{
     background-color:rgb(0,0,0,0.1);
@@ -516,10 +678,11 @@
     height:195px;
     position:absolute;
     left:655px;
-    top:150px;
+    top:250px;
     list-style-type:none;
     cursor: pointer;
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,1);
+    box-shadow: -0px -0px 30px -15px rgba(0,0,0,0.75);
+    border:1px solid rgb(247,248,249);
     padding:5px 10px;
     border-radius:10px;
     visibility: hidden;
@@ -527,7 +690,7 @@
 
 }
 .list6{
-    padding:6px 4px;
+    padding:6px 10px;
     width: 98%;
     height:5vh;
     background-color:white;
@@ -543,6 +706,7 @@
 }
 .listpagesparent:hover .listpagesparenthover {
     visibility: visible;
+    top:160px;
 }
 .list6:hover{
     background-color:rgb(0,0,0,0.1);
@@ -568,10 +732,11 @@
     height:130px;
     position:absolute;
     left:745px;
-    top:150px;
+    top:250px;
     list-style-type:none;
     cursor: pointer;
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,1);
+    box-shadow: -0px -0px 30px -15px rgba(0,0,0,0.75);
+    border:1px solid rgb(247,248,249);
     padding:5px 10px;
     border-radius:10px;
     visibility: hidden;
@@ -580,7 +745,7 @@
 
 }
 .list7{
-    padding:6px 4px;
+    padding:6px 10px;
     width: 98%;
     height:5vh;
     background-color:white;
@@ -601,6 +766,7 @@
 }
 .listaccountparent:hover .listaccountparenthover {
     visibility: visible;
+    top:160px;  
 }
 .list7:hover{
     background-color:rgb(0,0,0,0.1);
@@ -608,7 +774,7 @@
     /* ------------------------------- End of account----------------------------- */
 .listmegamanuparent{
     width:105px;
-    height:65px;
+    height:45px;
     /* background-color:skyblue; */
     display:flex;
     justify-content:space-between;
@@ -624,18 +790,19 @@
     font-size:10px;
 }
 .listmegamanuparenthover{
-    width:1330px;
+    width:1320px;
     height:380px;
     position: absolute;
     left:-550px;
-    top:60px;
+    top:100px;
     background-color: white;
     /* border:2px solid red; */
     /* background-color:blue; */
     cursor: pointer;
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,1);
+    box-shadow: -0px -0px 30px -15px rgba(0,0,0,0.75);
+    border:1px solid rgb(247,248,249);
     padding:15px 25px;
-    border-radius:10px;
+    /* border-radius:1px; */
     display: flex;
     visibility: hidden;
     transition: 0.3s ease-in-out;
@@ -700,10 +867,12 @@
 .listmegamanuparent:hover .black,
 .listmegamanuparent:hover .blue{
 visibility: visible;
+top:50px;
 }
 .list8:hover{
     background-color:rgb(0,0,0,0.1);
 }
+    /* -----------------------------End of megamanulist------------------------- */
 .listdashboardparent{
     padding:6px 10px;
     width: 12%;
@@ -731,4 +900,11 @@ visibility: visible;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+    /* ------------------------------End of navbar2------------------------------- */
+
+@media screen and (min-width:320px){
+.navbar2{
+    display:none;
+}
 }
